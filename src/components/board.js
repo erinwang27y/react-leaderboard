@@ -31,15 +31,7 @@ export default function Board() {
 
 
 function between(data, between){
-    // const today = new Date();
-    // const previous = new Date(today);
-    // previous.setDate(previous.getDate() - (between + 1));
-
-    // let filter = data.filter(val => {
-    //     let userDate = new Date(val.dt);
-    //     if (between == 0) return val;
-    //     return previous <= userDate && today >= userDate;
-    // })
+    
     let filter = data.filter((member, index) => {
         if (between == 0) return member;
         if (index < between ) return member;
